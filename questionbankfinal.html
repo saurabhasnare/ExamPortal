@@ -1,0 +1,113 @@
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
+     <link rel="stylesheet" href="question_bank.css">
+
+     <script type="text/javascript">     
+      function isNumber(evt) {
+              evt = (evt) ? evt : window.event;
+              var charCode = (evt.which) ? evt.which : evt.keyCode;
+              if ( (charCode > 31 && charCode < 48) || charCode > 57) {
+                  return false;
+              }
+              return true;
+          }
+      </script>
+      
+
+ </head>
+ <body>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+        <div class="card card-4">
+        <div class="card-body">
+        <h2 class="title">Create Question Form</h2>
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-12">
+            <label for="validationCustom04" class="form-label">Course</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Choose...</option>
+              <option>Web Devlopment</option>
+              <option>DataBase</option>
+              <option>Java</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a Course.
+            </div>
+          </div>
+            <div class="col-md-12">
+              <label for="validationCustom01" class="form-label">Question Number:</label>
+              <input type="text" class="form-control textfield" id="validationCustom01" value="" id="onlyNumbers" name="onlyNumbers" onkeypress="return isNumber(event)" onpaste="return false;" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label for="validationCustom02" class="form-label">Question:</label>
+              <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+           
+            <div class="col-md-12">
+              <label for="validationCustom02" class="form-label">Option 1:</label>
+              <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+          
+            <div class="col-md-12">
+              <label for="validationCustom02" class="form-label">Option 2:</label>
+              <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label for="validationCustom02" class="form-label">Option 3:</label>
+              <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label for="validationCustom02" class="form-label">Option 4</label>
+              <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label for="validationCustom02" class="form-label">Correct Option:</label>
+              <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-primary" type="reset">Reset</button>
+            </div>
+          </form>
+       
+        </form>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+<script src="question_bank.js"></script>        
+ </body>
+ </html> 
+    

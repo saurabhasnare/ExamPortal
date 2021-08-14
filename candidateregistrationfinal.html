@@ -1,0 +1,94 @@
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
+     <link rel="stylesheet" href="candidateregistration.css">
+
+ </head>
+ <body>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+        <div class="card card-4">
+        <div class="card-body">
+        <h2 class="title">Registration Form</h2>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+              <label for="validationCustom01" class="form-label">First name</label>
+              <input type="text" class="form-control" id="validationCustom01" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom02" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+           
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">Date Of Birth</label>
+              <input type="date" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Please provide a Date Of Birth
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom04" class="form-label">Course</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>Web Devlopment</option>
+                <option>DataBase</option>
+                <option>Java</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a Course.
+              </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom02" class="form-label">Email</label>
+                <input type="email" class="form-control" id="validationCustom02"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+            <div class="col-md-6">
+              <label for="validationCustom05" class="form-label">Phone No</label>
+              <input type="text" class="form-control" id="validationCustom05" pattern="[789][0-9]{9}" required>
+              <div class="invalid-feedback">
+                Please provide a Phone Number.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+          </form>
+       
+        </form>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+<script src="candidateregistartion.js"></script>        
+ </body>
+ </html> 
+    
